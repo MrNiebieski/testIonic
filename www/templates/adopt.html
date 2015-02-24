@@ -3,70 +3,55 @@
 -->
 <ion-view title="'Adopt A Pet'">
   <ion-content has-header="true" has-tabs="true">
-  <!-- /personal info -->
-  <div class="ui-corner-all custom-corners">
-    <div class="ui-bar ui-bar-a">
-      <h2>Personal Info</h2>
-    </div>
-    <div class="ui-body ui-body-a">
-      <div class="singlerow">
-        <div class="rowleft">
-          First Name *
+    <div class="list list-inset">
+      <!-- /personal info -->
+      <div class="ui-corner-all custom-corners">
+        <div class="ui-bar ui-bar-a">
+          <h2>Personal Info</h2>
         </div>
-        <div class="rowright">
-          <input type="text" id="otc_fname" name="fname" class="half-input" placeholder="First Name"
-          onKeyup="autotab(this, one_time_appointment_form.lname, /^[A-Za-z]+$/, 'Please enter a valid first name')"
-          data-clear-btn="true" autocomplete="off" autocorrect="off" autocapitalize="off" />
-        </div>
-      </div>
-      <div class="singlerow">
-        <div class="rowleft">
-          Last Name *
-        </div>
-        <div class="rowright">
-          <input type="text" id="otc_lname" name="lname" class="half-input" placeholder="Last Name"
-          onKeyup="autotab(this, one_time_appointment_form.email,/^[A-Za-z]+$/,'Please enter a valid last name')"
-          data-clear-btn="true" autocomplete="off" autocorrect="off" autocapitalize="off" />
-        </div>
-      </div>
-      <div class="singlerow">
-        <div class="rowleft">
-          Email *
-        </div>
-        <div class="rowright">
-          <input type="email" name="email" id="otc_registeremail" class="half-input"  placeholder="Personal Email"
-          onblur="autotab(this, one_time_appointment_form.cellph1,/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/,'Please enter a valid email')"
-          data-clear-btn="true" autocomplete="off" autocorrect="off" autocapitalize="off"  />
-          <span id="usercheck1"></span>
-        </div>
-      </div>
-      <div class="singlerow">
-        <div class="rowleft">
-          Cell Phone *
-        </div>
-        <div class="rowright">
-          <div class="ui-grid-b ">
-            <div class="ui-block-a ">
-              <input type="text" class="phone-input" name="cellph1" id="otc_cellph1"
-              onKeyup="autotab(this, one_time_appointment_form.cellph2,/^[0-9]+$/, 'Please enter a valid phone number')"
-              placeholder="###" maxlength="3" />
+        <div class="ui-body ui-body-a">
+          <div class="singlerow">
+            <div class="rowleft">
+              First Name *
             </div>
-            <div class="ui-block-b ">
-              <input type="text" class="phone-input" name="cellph2" id="otc_cellph2"
-              onKeyup="autotab(this, one_time_appointment_form.cellph3, /^[0-9]+$/, 'Please enter a valid phone number')"
-              placeholder="###" maxlength="3" />
-            </div>
-            <div class="ui-block-c ">
-              <input type="text" class="phone-input" name="cellph3" id="otc_cellph3"
-              onKeyup="autotab(this, one_time_appointment_form.otc_v1make, /^[0-9]+$/,'Please enter a valid phone number')"
-              placeholder="####" maxlength="4" />
+            <div class="rowright">
+              <input type="text" id="otc_fname" name="fname" class="half-input" placeholder="First Name"
+              onKeyup="autotab(this, one_time_appointment_form.lname, /^[A-Za-z]+$/, 'Please enter a valid first name')"
+              data-clear-btn="true" autocomplete="off" autocorrect="off" autocapitalize="off" />
             </div>
           </div>
+          <div class="singlerow">
+            <div class="rowleft">
+              Last Name *
+            </div>
+            <div class="rowright">
+              <input type="text" id="otc_lname" name="lname" class="half-input" placeholder="Last Name"
+              onKeyup="autotab(this, one_time_appointment_form.email,/^[A-Za-z]+$/,'Please enter a valid last name')"
+              data-clear-btn="true" autocomplete="off" autocorrect="off" autocapitalize="off" />
+            </div>
+          </div>
+          <div class="singlerow">
+            <div class="rowleft">
+              Email *
+            </div>
+            <div class="rowright">
+              <input type="email" name="email" id="otc_registeremail" class="half-input"  placeholder="Personal Email"
+              onblur="autotab(this, one_time_appointment_form.cellph1,/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/,'Please enter a valid email')"
+              data-clear-btn="true" autocomplete="off" autocorrect="off" autocapitalize="off"  />
+              <span id="usercheck1"></span>
+            </div>
+          </div>
+          <div class="singlerow">
+            <div class="rowleft">
+              Cell Phone *
+            </div>
+            <label class="item item-input">
+              <span class="input-label">Telephone</span>
+              <input type="tel">
+            </label>
+          </div>
         </div>
-      </div>
-    </div>
-  </div><!--Personal Info-->
-    <div class="list list-inset">
+      </div><!--Personal Info-->
       <label class="item item-input">
         <span class="input-label">Your name</span>
         <input type="text">
@@ -74,6 +59,10 @@
       <label class="item item-input">
         <span class="input-label">Your email</span>
         <input type="email">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Date</span>
+        <input type="date">
       </label>
       <ion-toggle>Subscribe To Newsletter</ion-toggle>
       <button class="button button-positive button-block">Adopt</button>
