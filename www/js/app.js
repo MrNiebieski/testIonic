@@ -48,7 +48,8 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/adopt',
       views: {
         'adopt-tab': {
-          templateUrl: 'templates/adopt.html'
+          templateUrl: 'templates/adopt.html',
+          controller: 'colorsController'
         }
       }
     })

@@ -50,6 +50,12 @@
           <option>Green</option>
         </select>
       </label>
+      <div ng-controller="colorsController"> 
+        <select ng-model="colorid" ng-options="x.color for x in colors">
+            <option value="" disabled="disabled">Select a color</option>
+        </select>
+
+      </div>
 
       <button class="button button-positive button-block">Submit</button>
 

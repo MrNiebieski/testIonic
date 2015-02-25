@@ -24,3 +24,18 @@ angular.module('starter.services', [])
     }
   }
 });
+
+// .factory('ColorService', function() {
+//   // Might use a resource here that returns a JSON array
+
+//   // Some fake testing data
+//   var colors = 
+//     $http.get("//manage.pineconetassel.com/index.php/api/v1/colors2")
+//     .success(function(response) {return response;} );
+
+//   return {
+//     all: function() {
+//       return colors;
+//     }
+//   }
+// });
