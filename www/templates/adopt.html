@@ -39,23 +39,14 @@
         <span class="input-label">Last Name</span>
         <input type="text">
       </label>
-      <label class="item item-input item-select">
+      <label class="item item-input item-select"  ng-controller="colorsController as colors">
         <div class="input-label">
           Color
         </div>
-        <select>
-          <option selected>Black</option>
-          <option>Red</option>
-          <option>Blue</option>
-          <option>Green</option>
-        </select>
-      </label>
-      <div ng-controller="colorsController"> 
         <select ng-model="colorid" ng-options="x.color for x in colors">
             <option value="" disabled="disabled">Select a color</option>
         </select>
-
-      </div>
+      </label>
 
       <button class="button button-positive button-block">Submit</button>
 
