@@ -16,6 +16,6 @@ angular.module('starter.controllers', [])
 
 .controller('colorsController', function($scope, $http) {
   // "Pets" is a service returning mock data (services.js)
-      $http.get("//manage.pineconetassel.com/index.php/api/v1/colors2")
+      $http.get("https://manage.pineconetassel.com/index.php/api/v1/colors2")
       .success(function(response) {$scope.colors = response;} );
 });
