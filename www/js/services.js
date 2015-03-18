@@ -1,4 +1,6 @@
-angular.module('starter.services', ['$http'])
+angular.module('starter.services', ['$http',function($http){
+
+}]);
 
 /**
  * A simple example service that returns some data.
