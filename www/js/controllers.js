@@ -13,3 +13,8 @@ angular.module('starter.controllers', [])
   // "Pets" is a service returning mock data (services.js)
   $scope.pet = PetService.get($stateParams.petId);
 });
+
+.controller('customersCtrl', function($scope, $http) {
+  $http.get("http://www.w3schools.com/website/Customers_JSON.php")
+  .success(function (response) {$scope.names = response;});
+});
