@@ -15,6 +15,6 @@ angular.module('starter.controllers', [])
 });
 
 .controller('customersCtrl', function($scope, $http) {
-  // $http.get("http://www.w3schools.com/website/Customers_JSON.php")
-  // .success(function (response) {$scope.names = response;});
+  $http.get("http://www.w3schools.com/website/Customers_JSON.php")
+  .success(function (response) {$scope.names = response;});
 });
