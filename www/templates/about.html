@@ -2,8 +2,7 @@
   This template loads for the 'tab.about' state (app.js)
 -->
 
-<div ng-app="myApp" ng-controller="customersCtrl"> 
-<ion-view>
+<ion-view ng-controller="customersCtrl">
 <ul>
   <li ng-repeat="x in names">
     {{ x.Name + ', ' + x.Country }}
