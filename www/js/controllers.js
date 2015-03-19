@@ -15,6 +15,7 @@ angular.module('starter.controllers', ['ionic'])
 });
 
 .controller('customersCtrl', function($scope, $http) {
-  $http.get("http://www.w3schools.com/website/Customers_JSON.php")
-  .success(function (response) {$scope.names = response;});
+    $http.jsonp("https://manage.pineconetassel.com/index.php/api/v1/colors2
+        ?callback=JSON_CALLBACK")
+    .success(function (response) {$scope.names = response;});
 });
